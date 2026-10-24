@@ -1,0 +1,6 @@
+Normally ON SiC JFET / nonlinear Poisson / discrete Green operator
+P+ doping=5.000e+17 cm^-3; n channel doping=1.000e+16 cm^-3
+Gate metal contacts ONLY OUTER P+ FACES, not whole columns.
+1D abrupt-junction Wn=0.5587 um; Wp=0.01117 um; open core=0.6826 um
+Computed 2D peak E=0.4190 MV/cm (mesh-dependent near junction corners)
+VDS=0: equilibrium electrostatics; neither Id-Vg nor breakdown simulated.
