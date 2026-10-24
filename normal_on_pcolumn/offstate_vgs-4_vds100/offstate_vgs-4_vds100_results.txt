@@ -1,0 +1,6 @@
+Vertical 4H-SiC JFET OFF-state blocking (depletion-approximation 2D Poisson)
+VGS = -4.0 V ; VDS = 100.0 V
+n- drift and channel depleted (fixed ionized donors); P+ columns equipotential at gate.
+Linear residual = 3.00e-15
+2D peak |E| (excl. P+ interior) = 1.0737 MV/cm at x=-1.550, z=3.100 um
+Mesh-dependent at idealized doping corners; NOT a transport/avalanche breakdown result.
