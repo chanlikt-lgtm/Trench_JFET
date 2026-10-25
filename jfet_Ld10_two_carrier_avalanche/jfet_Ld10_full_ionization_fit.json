@@ -1,0 +1,83 @@
+{
+  "description": "exploratory 2D DD impact-ionization-feedback onset, NOT certified physical breakdown",
+  "model": "selfconsistent electron+hole ionization source in converged subthreshold states; gain to unity extrapolated",
+  "n_inputs": 56,
+  "n_valid_fit": 15,
+  "count_by_status": {
+    "0": 0,
+    "1": 12,
+    "2": 5,
+    "3": 24,
+    "4": 9,
+    "5": 6
+  },
+  "normalizations": {
+    "u": "(a_um-0.5)/0.3",
+    "v": "log10(NA_cm3)-17.5"
+  },
+  "degree": 2,
+  "coefficients": [
+    {
+      "i": 0,
+      "j": 0,
+      "coefficient": 40.575192616088415
+    },
+    {
+      "i": 1,
+      "j": 0,
+      "coefficient": -16.650720149055342
+    },
+    {
+      "i": 0,
+      "j": 1,
+      "coefficient": -9.199092889879378
+    },
+    {
+      "i": 2,
+      "j": 0,
+      "coefficient": 35.89987202841777
+    },
+    {
+      "i": 1,
+      "j": 1,
+      "coefficient": 15.007656978624176
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "coefficient": 13.32913769915503
+    }
+  ],
+  "r2_fit": 0.880476299203481,
+  "rmse_fit_V": 2.6295368573984335,
+  "r2_holdout": 0.8503588418973392,
+  "rmse_holdout_V": 3.061929701834288,
+  "max_holdout_error_V": 3.8247957803565598,
+  "kfold_scores": [
+    {
+      "degree": 1,
+      "rmse_V": 6.774061420416919,
+      "r2": 0.2067797975001393
+    },
+    {
+      "degree": 2,
+      "rmse_V": 5.618193017973674,
+      "r2": 0.45438183839666024
+    },
+    {
+      "degree": 3,
+      "rmse_V": 6.493210006047702,
+      "r2": 0.2711898622974124
+    }
+  ],
+  "notes": [
+    "Fixed 2um total silicon height. N-channel h=2-2a.",
+    "Constant low-field mobility; no SRH, velocity saturation, bandgap narrowing, quantum effects or avalanche transient.",
+    "Finite rectangular corners unresolved; mesh is 0.1um x 0.1um.",
+    "N+ source/drain widths 0.2um each, assumed from prior illustrative model.",
+    "Screened reliable points: n_center/N_D<=0.5, extrapolation length<=15V, E_last<=640kV/cm, NA<=1e18cm^-3.",
+    "No experimental data; R2 quantifies only agreement with the numerical model.",
+    "Fit domain convex hull of 15 filtered sample locations.",
+    "Screen fallback to high-doping samples used: True."
+  ]
+}

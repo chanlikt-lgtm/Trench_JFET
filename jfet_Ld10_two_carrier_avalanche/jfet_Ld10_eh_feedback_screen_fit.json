@@ -1,0 +1,102 @@
+{
+  "method": "two-carrier avalanche feedback=1 on zero-impact-ionization selfconsistent 2D Poisson drift diffusion field; additional fully coupled avalanche subthreshold solves for a subset",
+  "correction_full_ionization": "Not complete over the grid: do not call plotted screening values fully self-consistent breakdown voltages",
+  "fit_degree": 3,
+  "fit_R2": 0.9678687860758003,
+  "test_R2": 0.6911869192903509,
+  "test_RMSE_V": 1.7625005149806372,
+  "points_fit": 32,
+  "points_source_converged": 14,
+  "model_range": {
+    "a_um": [
+      0.3,
+      0.8
+    ],
+    "NA_cm3": [
+      3.16227766017e+16,
+      6.81292069058e+17
+    ]
+  },
+  "coefficients": [
+    {
+      "i": 0,
+      "j": 0,
+      "coefficient": 42.52690354913682
+    },
+    {
+      "i": 1,
+      "j": 0,
+      "coefficient": -0.21797459510121886
+    },
+    {
+      "i": 0,
+      "j": 1,
+      "coefficient": 2.2153703829295646
+    },
+    {
+      "i": 2,
+      "j": 0,
+      "coefficient": 19.072902575540038
+    },
+    {
+      "i": 1,
+      "j": 1,
+      "coefficient": 12.500286961378931
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "coefficient": 7.998982854902565
+    },
+    {
+      "i": 3,
+      "j": 0,
+      "coefficient": -10.665675459118951
+    },
+    {
+      "i": 2,
+      "j": 1,
+      "coefficient": -14.942257655864436
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "coefficient": -32.244826791332414
+    },
+    {
+      "i": 0,
+      "j": 3,
+      "coefficient": -13.590443097111145
+    }
+  ],
+  "kfold": [
+    {
+      "degree": 1,
+      "rmse": 5.136434629826418,
+      "r2": 0.16029714935315265
+    },
+    {
+      "degree": 2,
+      "rmse": 3.474286884906945,
+      "r2": 0.6158211512943261
+    },
+    {
+      "degree": 3,
+      "rmse": 1.652796987839446,
+      "r2": 0.9130556985963657
+    },
+    {
+      "degree": 4,
+      "rmse": 1.9899412670037233,
+      "r2": 0.8739674818135866
+    }
+  ],
+  "physical_limitations": [
+    "No Fermi-Dirac, velocity saturation, SRH recombination or bandgap narrowing",
+    "Ideal abrupt rectangular gate tips, no rounding, mesh 0.1um",
+    "The ionization feedback operator uses |Jn| and |Jp| and a local field-dependent Van Overstraeten-de Man model",
+    "For E outside 1.75e5 to 6.4e5 V/cm, coefficients are extrapolated, calibration is limited",
+    "N+ source/drain lateral depth 0.2um each assumed; no empirical validation",
+    "Strongly depleted channel screen n_mid/N_D<0.5 at Vg=-4, Vd=0."
+  ]
+}
